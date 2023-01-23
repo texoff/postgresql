@@ -1,0 +1,7 @@
+Команда:
+\copy tmp from '/tmp/aircrafts_tmp.csv' with ( FORMAT csv );
+
+Сожержание файла aircrafts_tmp.csv:
+  773,Боинг 777-300,11100
+  763,Боинг 767-300,7900
+  SUP,Sukhoi SuperJet-200,5000
