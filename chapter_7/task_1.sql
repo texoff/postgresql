@@ -1,7 +1,8 @@
 -- Добавьте в определение таблицы aircrafts_log значение по умолчанию
 -- current_timestamp и соответствующим образом измените команды INSERT,
 -- приведенные в тексте главы.
--- Создадин временные таблицы
+
+-- Создадим временные таблицы
 CREATE TEMP TABLE aircrafts_tmp AS
 SELECT
   *
@@ -12,6 +13,7 @@ SELECT
   *
 FROM
   aircrafts WITH NO DATA;
+  
 -- Добавим столбцы
 ALTER TABLE
   aircrafts_tmp
@@ -29,6 +31,7 @@ ALTER TABLE
   aircrafts_log
 ADD
   COLUMN operation text;
+  
 -- Добавляем данные
   WITH add_row AS (
     INSERT INTO
