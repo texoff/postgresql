@@ -11,5 +11,8 @@
     SELECT ? FROM add_row;
 ```
 Что нужно написать в этом запросе вместо вопросительного знака?
-3. 
+3. Как вы думаете, что будет выведено, если дополнить команду предложением RETURNING *?
+  ```sql
+    INSERT INTO aircrafts_tmp SELECT * FROM aircrafts RETURNING *;
+  ```
 4. 
